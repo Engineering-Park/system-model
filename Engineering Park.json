@@ -796,9 +796,14 @@
           "time": 1641231506101,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1641475068992,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "Financial Operations",
@@ -991,9 +996,14 @@
           "time": 1641221268866,
           "operation": "create",
           "description": "Added defined_by relationship with EP Organization in Github"
+        },
+        {
+          "time": 1641315095291,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
         }
       ],
-      "status": "NotStarted"
+      "status": "InProgress"
     },
     {
       "name": "Media",
@@ -1162,9 +1172,14 @@
           "time": 1641213107201,
           "operation": "delete",
           "description": "Removed defined_by relationship with Have a plan"
+        },
+        {
+          "time": 1641315096316,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
         }
       ],
-      "status": "NotStarted"
+      "status": "InProgress"
     },
     {
       "name": "Pay rent to land owners",
@@ -1592,9 +1607,14 @@
           "time": 1641231508597,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1641475071084,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "Website MVP",
