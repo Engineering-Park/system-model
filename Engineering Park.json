@@ -41,7 +41,7 @@
     },
     {
       "name": "3rd Party Tenants",
-      "type": "Undefined",
+      "type": "People",
       "relationships": [],
       "changeLog": [
         {
@@ -68,6 +68,11 @@
           "time": 1641210774007,
           "operation": "update",
           "description": "Changed element name from: 'Tenants' to: '3rd Party Tenants'"
+        },
+        {
+          "time": 1641844525857,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
         }
       ]
     },
@@ -206,7 +211,7 @@
     },
     {
       "name": "Community",
-      "type": "Undefined",
+      "type": "People",
       "relationships": [
         {
           "target": "3rd Party Tenants",
@@ -281,6 +286,11 @@
           "time": 1641210817939,
           "operation": "update",
           "description": "Changed type from System to Undefined"
+        },
+        {
+          "time": 1641844510567,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
         }
       ]
     },
@@ -298,7 +308,7 @@
     },
     {
       "name": "Contributor Tenants",
-      "type": "Undefined",
+      "type": "People",
       "relationships": [],
       "changeLog": [
         {
@@ -310,6 +320,11 @@
           "time": 1641210790329,
           "operation": "update",
           "description": "Changed type from System to Undefined"
+        },
+        {
+          "time": 1641844530322,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
         }
       ]
     },
@@ -456,7 +471,7 @@
     },
     {
       "name": "Engineering Park",
-      "type": "System",
+      "type": "Organization",
       "relationships": [
         {
           "target": "Assets",
@@ -520,6 +535,11 @@
           "time": 1641210755319,
           "operation": "create",
           "description": "Added built_from relationship with Land Owners"
+        },
+        {
+          "time": 1641844640290,
+          "operation": "update",
+          "description": "Changed type from System to Organization"
         }
       ]
     },
@@ -542,7 +562,7 @@
     },
     {
       "name": "Engineering Park Organization on Github",
-      "type": "System",
+      "type": "Organization",
       "relationships": [
         {
           "target": "Media",
@@ -591,6 +611,11 @@
           "time": 1641221709390,
           "operation": "create",
           "description": "Added built_from relationship with Projects"
+        },
+        {
+          "time": 1641844563942,
+          "operation": "update",
+          "description": "Changed type from System to Organization"
         }
       ]
     },
@@ -916,7 +941,7 @@
     },
     {
       "name": "Land Owners",
-      "type": "Undefined",
+      "type": "People",
       "relationships": [],
       "changeLog": [
         {
@@ -928,6 +953,11 @@
           "time": 1641210147039,
           "operation": "update",
           "description": "Changed element name from: 'Engineering Park Land Owners' to: 'Land Owners'"
+        },
+        {
+          "time": 1641844518104,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
         }
       ]
     },
@@ -945,7 +975,7 @@
     },
     {
       "name": "Leadership Team",
-      "type": "Undefined",
+      "type": "People",
       "relationships": [],
       "changeLog": [
         {
@@ -957,6 +987,11 @@
           "time": 1641210811715,
           "operation": "update",
           "description": "Changed type from System to Undefined"
+        },
+        {
+          "time": 1641844534303,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
         }
       ]
     },
