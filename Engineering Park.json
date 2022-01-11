@@ -1521,9 +1521,14 @@
           "time": 1641219704123,
           "operation": "update",
           "description": "Changed element name from: 'Rent model published' to: 'Tenants page and rent model published'"
+        },
+        {
+          "time": 1641927105078,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
         }
       ],
-      "status": "NotStarted"
+      "status": "InProgress"
     },
     {
       "name": "Tennant placeholders MVP",
