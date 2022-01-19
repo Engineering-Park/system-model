@@ -412,9 +412,14 @@
           "time": 1641307188420,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1642628370082,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "District MVP",
@@ -1036,9 +1041,14 @@
           "time": 1641315095291,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1642628363723,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "Media",
@@ -1212,9 +1222,14 @@
           "time": 1641315096316,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1642628362771,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "Pay rent to land owners",
@@ -1526,9 +1541,14 @@
           "time": 1641927105078,
           "operation": "update",
           "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1642628373538,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "InProgress"
+      "status": "Finished"
     },
     {
       "name": "Tennant placeholders MVP",
