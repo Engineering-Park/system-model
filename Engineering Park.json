@@ -176,18 +176,6 @@
       ]
     },
     {
-      "name": "Blog",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683578,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
       "name": "Calculate rent due to land owners",
       "type": "Function",
       "relationships": [
@@ -355,33 +343,6 @@
         }
       ],
       "description": "Redirect to the engineering park district in Decentraland"
-    },
-    {
-      "name": "District Layout",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683578,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641211828305,
-          "operation": "update",
-          "description": "Changed description: added: '- Land usage'"
-        },
-        {
-          "time": 1641211839974,
-          "operation": "update",
-          "description": "Changed description: removed: '- Land usage' added: '- Layout map\n- Land usage'"
-        },
-        {
-          "time": 1641211849708,
-          "operation": "update",
-          "description": "Changed description: removed: '- Layout map\n- Land usage'"
-        }
-      ]
     },
     {
       "name": "District layout published",
@@ -627,44 +588,7 @@
     {
       "name": "Engineering Park Website",
       "type": "Data",
-      "relationships": [
-        {
-          "target": "Blog",
-          "type": "built_from"
-        },
-        {
-          "target": "District Layout",
-          "type": "built_from"
-        },
-        {
-          "target": "Guidelines",
-          "type": "built_from"
-        },
-        {
-          "target": "History",
-          "type": "built_from"
-        },
-        {
-          "target": "Home",
-          "type": "built_from"
-        },
-        {
-          "target": "Organization",
-          "type": "built_from"
-        },
-        {
-          "target": "References",
-          "type": "built_from"
-        },
-        {
-          "target": "Tenants",
-          "type": "built_from"
-        },
-        {
-          "target": "The Metaverse",
-          "type": "built_from"
-        }
-      ],
+      "relationships": [],
       "changeLog": [
         {
           "time": 1641210279497,
@@ -853,29 +777,6 @@
       ]
     },
     {
-      "name": "Guidelines",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641211880268,
-          "operation": "update",
-          "description": "Changed description: added: '- Code of conduct\n- Land usage\n- Content guidelines'"
-        },
-        {
-          "time": 1641214444160,
-          "operation": "update",
-          "description": "Changed description: removed: '- Code of conduct\n- Land usage\n- Content guidelines' added: '- Code of conduct\n- Content guidelines'"
-        }
-      ],
-      "description": "- Code of conduct\n- Content guidelines"
-    },
-    {
       "name": "Have a plan",
       "type": "Milestone",
       "relationships": [],
@@ -897,52 +798,6 @@
         }
       ],
       "status": "Finished"
-    },
-    {
-      "name": "History",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641211954813,
-          "operation": "update",
-          "description": "Changed description: added: '- DCL story (incl. ICO)\n- District formation (referring to original proposal and approved proposal)'"
-        },
-        {
-          "time": 1641211981501,
-          "operation": "update",
-          "description": "Changed description: undefined: '- DCL story (incl.' removed: ' ICO)\n- District formation (referring to original proposal and approved proposal)' added: ' ICO)\n- District formation (referring to original proposal and approved proposal)\n-> Present in the form of a timeline'"
-        }
-      ],
-      "description": "- DCL story (incl. ICO)\n- District formation (referring to original proposal and approved proposal)\n-> Present in the form of a timeline"
-    },
-    {
-      "name": "Home",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683578,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641211767906,
-          "operation": "update",
-          "description": "Changed description: added: '- Mission\n- Vision\n- Location'"
-        },
-        {
-          "time": 1641211792708,
-          "operation": "update",
-          "description": "Changed description: removed: '- Mission\n- Vision\n- Location' added: '- Mission\n- Vision\n- Introduction\n- Location'"
-        }
-      ],
-      "description": "- Mission\n- Vision\n- Introduction\n- Location"
     },
     {
       "name": "Land Owners",
@@ -1145,18 +1000,6 @@
           "time": 1641211031270,
           "operation": "create",
           "description": "Added built_from relationship with Leadership Operations"
-        }
-      ]
-    },
-    {
-      "name": "Organization",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": null
         }
       ]
     },
@@ -1407,24 +1250,6 @@
       ]
     },
     {
-      "name": "References",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641212014928,
-          "operation": "update",
-          "description": "Changed description: added: '- Original proposal\n- Approved proposal\n- DCL docs'"
-        }
-      ],
-      "description": "- Original proposal\n- Approved proposal\n- DCL docs"
-    },
-    {
       "name": "Smart contract for rent in place",
       "type": "Milestone",
       "relationships": [],
@@ -1488,24 +1313,6 @@
           "description": "Changed element name from: 'Technical' to: 'Technical Operations'"
         }
       ]
-    },
-    {
-      "name": "Tenants",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641214180771,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641214260789,
-          "operation": "update",
-          "description": "Changed description: added: '- Rent for 3rd party tenants'"
-        }
-      ],
-      "description": "- Rent for 3rd party tenants"
     },
     {
       "name": "Tenants page and rent model published",
@@ -1572,29 +1379,6 @@
         }
       ],
       "status": "NotStarted"
-    },
-    {
-      "name": "The Metaverse",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641212042348,
-          "operation": "update",
-          "description": "Changed description: added: '- Crypro\n- Blockchain\n- etc.'"
-        },
-        {
-          "time": 1641212049751,
-          "operation": "update",
-          "description": "Changed description: removed: '- Crypro\n- Blockchain\n' added: '- Crypto\n- Blockchain\n' undefined: '- etc.'"
-        }
-      ],
-      "description": "- Crypto\n- Blockchain\n- etc."
     },
     {
       "name": "Transfer MANA to land owner wallets",
@@ -1766,6 +1550,51 @@
       "time": 1641213274010,
       "operation": "delete",
       "description": "Removed milestone element: Website placeholder"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: The Metaverse"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: Tenants"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: References"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: Organization"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: Home"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: History"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: Guidelines"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: District Layout"
+    },
+    {
+      "time": 1644354276601,
+      "operation": "delete",
+      "description": "Removed data element: Blog"
     }
   ]
 }
