@@ -40,60 +40,27 @@
       "status": "NotStarted"
     },
     {
-      "name": "3rd Party Tenants",
-      "type": "People",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641209627271,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641209725190,
-          "operation": "update",
-          "description": "Changed type from System to Undefined"
-        },
-        {
-          "time": 1641209758151,
-          "operation": "update",
-          "description": "Changed element name from: 'Tenants' to: 'Engineering Park Tenants'"
-        },
-        {
-          "time": 1641210151295,
-          "operation": "update",
-          "description": "Changed element name from: 'Engineering Park Tenants' to: 'Tenants'"
-        },
-        {
-          "time": 1641210774007,
-          "operation": "update",
-          "description": "Changed element name from: 'Tenants' to: '3rd Party Tenants'"
-        },
-        {
-          "time": 1641844525857,
-          "operation": "update",
-          "description": "Changed type from Undefined to People"
-        }
-      ]
-    },
-    {
       "name": "Assets",
       "type": "System",
       "relationships": [
         {
-          "target": "Engineering Park District in Decentraland",
-          "type": "built_from"
-        },
-        {
-          "target": "Engineering Park Organization on Github",
-          "type": "built_from"
-        },
-        {
-          "target": "Engineering Park Website",
+          "target": "Decentraland Estate",
           "type": "built_from"
         },
         {
           "target": "engineeringpark.org",
+          "type": "built_from"
+        },
+        {
+          "target": "Github Organization",
+          "type": "built_from"
+        },
+        {
+          "target": "Open Collective",
+          "type": "built_from"
+        },
+        {
+          "target": "Website",
           "type": "built_from"
         }
       ],
@@ -172,6 +139,11 @@
           "time": 1641221676873,
           "operation": "delete",
           "description": "Removed built_from relationship with Media"
+        },
+        {
+          "time": 1648761625799,
+          "operation": "create",
+          "description": "Added built_from relationship with Engineering Park Collective"
         }
       ]
     },
@@ -198,19 +170,31 @@
       ]
     },
     {
+      "name": "Commercial Tenants",
+      "type": "People",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1648761469198,
+          "operation": "create",
+          "description": null
+        }
+      ]
+    },
+    {
       "name": "Community",
       "type": "People",
       "relationships": [
         {
-          "target": "3rd Party Tenants",
+          "target": "Commercial Tenants",
           "type": "built_from"
         },
         {
-          "target": "Contributor Tenants",
+          "target": "Land Contributors",
           "type": "built_from"
         },
         {
-          "target": "Leadership Team",
+          "target": "Non-Commercial Tenants",
           "type": "built_from"
         }
       ],
@@ -279,70 +263,45 @@
           "time": 1641844510567,
           "operation": "update",
           "description": "Changed type from Undefined to People"
-        }
-      ]
-    },
-    {
-      "name": "Community Liaison Operations",
-      "type": "Service",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210925344,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "Contributor Tenants",
-      "type": "People",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210785201,
-          "operation": "create",
-          "description": null
         },
         {
-          "time": 1641210790329,
-          "operation": "update",
-          "description": "Changed type from System to Undefined"
+          "time": 1648754984073,
+          "operation": "delete",
+          "description": "Removed built_from relationship with Leadership Team"
         },
         {
-          "time": 1641844530322,
-          "operation": "update",
-          "description": "Changed type from Undefined to People"
+          "time": 1648761469199,
+          "operation": "create",
+          "description": "Added built_from relationship with Commercial Tenants"
+        },
+        {
+          "time": 1648761531575,
+          "operation": "create",
+          "description": "Added built_from relationship with Land Contributors"
         }
       ]
     },
     {
-      "name": "dcl.",
+      "name": "Decentraland Estate",
       "type": "Data",
       "relationships": [],
       "changeLog": [
         {
-          "time": 1641212179362,
+          "time": 1641210302661,
           "operation": "create",
           "description": null
         },
         {
-          "time": 1641212201301,
+          "time": 1641210338945,
           "operation": "update",
-          "description": "Changed description: added: 'Redirect to the engineering park district in decentraland'"
+          "description": "Changed element name from: 'Decentraland Engineering Park District' to: 'Engineering Park District in Decentraland'"
         },
         {
-          "time": 1641212206072,
+          "time": 1648761570113,
           "operation": "update",
-          "description": "Changed description: undefined: 'Redirect to the engineering park district in Decentraland'"
-        },
-        {
-          "time": 1641212236210,
-          "operation": "update",
-          "description": "Changed element name from: 'dcl' to: 'dcl.'"
+          "description": "Changed element name from: 'Engineering Park District in Decentraland' to: 'Decentraland Estate'"
         }
-      ],
-      "description": "Redirect to the engineering park district in Decentraland"
+      ]
     },
     {
       "name": "District layout published",
@@ -419,9 +378,14 @@
           "time": 1641221265507,
           "operation": "create",
           "description": "Added defined_by relationship with Tennant placeholders MVP"
+        },
+        {
+          "time": 1648751176736,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
         }
       ],
-      "status": "NotStarted"
+      "status": "InProgress"
     },
     {
       "name": "Donate rent to collective",
@@ -448,7 +412,7 @@
           "type": "built_from"
         },
         {
-          "target": "Land Owners",
+          "target": "Leadership Team",
           "type": "built_from"
         },
         {
@@ -506,165 +470,23 @@
           "time": 1641844640290,
           "operation": "update",
           "description": "Changed type from System to Organization"
-        }
-      ]
-    },
-    {
-      "name": "Engineering Park District in Decentraland",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
+        },
         {
-          "time": 1641210302661,
+          "time": 1648754982743,
           "operation": "create",
-          "description": null
+          "description": "Added built_from relationship with Leadership Team"
         },
         {
-          "time": 1641210338945,
-          "operation": "update",
-          "description": "Changed element name from: 'Decentraland Engineering Park District' to: 'Engineering Park District in Decentraland'"
-        }
-      ]
-    },
-    {
-      "name": "Engineering Park Organization on Github",
-      "type": "Organization",
-      "relationships": [
-        {
-          "target": "Media",
-          "type": "built_from"
-        },
-        {
-          "target": "Projects",
-          "type": "built_from"
-        },
-        {
-          "target": "Source Code",
-          "type": "built_from"
-        },
-        {
-          "target": "System Model",
-          "type": "built_from"
-        }
-      ],
-      "changeLog": [
-        {
-          "time": 1641221650542,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641221664457,
-          "operation": "update",
-          "description": "Changed element name from: 'Engineering Park Organization on Gitub' to: 'Engineering Park Organization on Github'"
-        },
-        {
-          "time": 1641221681237,
-          "operation": "create",
-          "description": "Added built_from relationship with Media"
-        },
-        {
-          "time": 1641221681288,
-          "operation": "create",
-          "description": "Added built_from relationship with Source Code"
-        },
-        {
-          "time": 1641221681332,
-          "operation": "create",
-          "description": "Added built_from relationship with System Model"
-        },
-        {
-          "time": 1641221709390,
-          "operation": "create",
-          "description": "Added built_from relationship with Projects"
-        },
-        {
-          "time": 1641844563942,
-          "operation": "update",
-          "description": "Changed type from System to Organization"
-        }
-      ]
-    },
-    {
-      "name": "Engineering Park Website",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210279497,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641210431858,
-          "operation": "update",
-          "description": "Changed element name from: 'Website' to: 'www Website'"
-        },
-        {
-          "time": 1641210446455,
-          "operation": "update",
-          "description": "Changed element name from: 'www Website' to: 'Engineering Park Website'"
-        },
-        {
-          "time": 1641211683579,
-          "operation": "create",
-          "description": "Added built_from relationship with Home"
-        },
-        {
-          "time": 1641211683580,
-          "operation": "create",
-          "description": "Added built_from relationship with Blog"
-        },
-        {
-          "time": 1641211683580,
-          "operation": "create",
-          "description": "Added built_from relationship with District Layout"
-        },
-        {
-          "time": 1641211683580,
-          "operation": "create",
-          "description": "Added built_from relationship with Guidelines"
-        },
-        {
-          "time": 1641211683581,
-          "operation": "create",
-          "description": "Added built_from relationship with History"
-        },
-        {
-          "time": 1641211683581,
-          "operation": "create",
-          "description": "Added built_from relationship with References"
-        },
-        {
-          "time": 1641211683581,
-          "operation": "create",
-          "description": "Added built_from relationship with Organization"
-        },
-        {
-          "time": 1641211683581,
-          "operation": "create",
-          "description": "Added built_from relationship with The Metaverse"
-        },
-        {
-          "time": 1641214180772,
-          "operation": "create",
-          "description": "Added built_from relationship with Tenants"
+          "time": 1648757469395,
+          "operation": "delete",
+          "description": "Removed built_from relationship with Land Contributors"
         }
       ]
     },
     {
       "name": "engineeringpark.org",
       "type": "Data",
-      "relationships": [
-        {
-          "target": "dcl.",
-          "type": "built_from"
-        },
-        {
-          "target": "www.",
-          "type": "built_from"
-        }
-      ],
+      "relationships": [],
       "changeLog": [
         {
           "time": 1641210241121,
@@ -760,6 +582,28 @@
       "status": "Finished"
     },
     {
+      "name": "Ethereum Operations",
+      "type": "Service",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1641210526263,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1641210678327,
+          "operation": "update",
+          "description": "Changed element name from: 'Technical' to: 'Technical Operations'"
+        },
+        {
+          "time": 1648761789121,
+          "operation": "update",
+          "description": "Changed element name from: 'Technical Operations' to: 'Ethereum Operations'"
+        }
+      ]
+    },
+    {
       "name": "Financial Operations",
       "type": "Service",
       "relationships": [],
@@ -773,6 +617,53 @@
           "time": 1641210670699,
           "operation": "update",
           "description": "Changed element name from: 'Financial' to: 'Financial Operations'"
+        }
+      ]
+    },
+    {
+      "name": "Github Organization",
+      "type": "Organization",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1641221650542,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1641221664457,
+          "operation": "update",
+          "description": "Changed element name from: 'Engineering Park Organization on Gitub' to: 'Engineering Park Organization on Github'"
+        },
+        {
+          "time": 1641221681237,
+          "operation": "create",
+          "description": "Added built_from relationship with Media"
+        },
+        {
+          "time": 1641221681288,
+          "operation": "create",
+          "description": "Added built_from relationship with Source Code"
+        },
+        {
+          "time": 1641221681332,
+          "operation": "create",
+          "description": "Added built_from relationship with System Model"
+        },
+        {
+          "time": 1641221709390,
+          "operation": "create",
+          "description": "Added built_from relationship with Projects"
+        },
+        {
+          "time": 1641844563942,
+          "operation": "update",
+          "description": "Changed type from System to Organization"
+        },
+        {
+          "time": 1648761599141,
+          "operation": "update",
+          "description": "Changed element name from: 'Engineering Park Organization on Github' to: 'Github Organization'"
         }
       ]
     },
@@ -800,7 +691,7 @@
       "status": "Finished"
     },
     {
-      "name": "Land Owners",
+      "name": "Land Contributors",
       "type": "People",
       "relationships": [],
       "changeLog": [
@@ -818,18 +709,11 @@
           "time": 1641844518104,
           "operation": "update",
           "description": "Changed type from Undefined to People"
-        }
-      ]
-    },
-    {
-      "name": "Leadership Operations",
-      "type": "Service",
-      "relationships": [],
-      "changeLog": [
+        },
         {
-          "time": 1641211031269,
-          "operation": "create",
-          "description": null
+          "time": 1648755150886,
+          "operation": "update",
+          "description": "Changed element name from: 'Land Owners' to: 'Land Contributors'"
         }
       ]
     },
@@ -852,23 +736,6 @@
           "time": 1641844534303,
           "operation": "update",
           "description": "Changed type from Undefined to People"
-        }
-      ]
-    },
-    {
-      "name": "Legal Operations",
-      "type": "Service",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210526263,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641210675095,
-          "operation": "update",
-          "description": "Changed element name from: 'Legal' to: 'Legal Operations'"
         }
       ]
     },
@@ -906,23 +773,6 @@
       "status": "Finished"
     },
     {
-      "name": "Media",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210364063,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641210368507,
-          "operation": "update",
-          "description": "Changed type from Software to Data"
-        }
-      ]
-    },
-    {
       "name": "More tenants",
       "type": "Milestone",
       "relationships": [],
@@ -936,27 +786,79 @@
       "status": "NotStarted"
     },
     {
+      "name": "Non-Commercial Tenants",
+      "type": "People",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1641209627271,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1641209725190,
+          "operation": "update",
+          "description": "Changed type from System to Undefined"
+        },
+        {
+          "time": 1641209758151,
+          "operation": "update",
+          "description": "Changed element name from: 'Tenants' to: 'Engineering Park Tenants'"
+        },
+        {
+          "time": 1641210151295,
+          "operation": "update",
+          "description": "Changed element name from: 'Engineering Park Tenants' to: 'Tenants'"
+        },
+        {
+          "time": 1641210774007,
+          "operation": "update",
+          "description": "Changed element name from: 'Tenants' to: '3rd Party Tenants'"
+        },
+        {
+          "time": 1641844525857,
+          "operation": "update",
+          "description": "Changed type from Undefined to People"
+        },
+        {
+          "time": 1648761459752,
+          "operation": "update",
+          "description": "Changed element name from: '3rd Party Tenants' to: 'Non-Commercial Tenants'"
+        }
+      ]
+    },
+    {
+      "name": "Open Collective",
+      "type": "Organization",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1648761625798,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1648761639747,
+          "operation": "update",
+          "description": "Changed type from System to Organization"
+        },
+        {
+          "time": 1648761716366,
+          "operation": "update",
+          "description": "Changed element name from: 'Engineering Park Collective' to: 'Open Collective'"
+        }
+      ]
+    },
+    {
       "name": "Operations",
       "type": "System",
       "relationships": [
         {
-          "target": "Community Liaison Operations",
+          "target": "Ethereum Operations",
           "type": "built_from"
         },
         {
           "target": "Financial Operations",
-          "type": "built_from"
-        },
-        {
-          "target": "Leadership Operations",
-          "type": "built_from"
-        },
-        {
-          "target": "Legal Operations",
-          "type": "built_from"
-        },
-        {
-          "target": "Technical Operations",
           "type": "built_from"
         }
       ],
@@ -1022,9 +924,14 @@
           "time": 1641213391547,
           "operation": "create",
           "description": "Added defined_by relationship with Website home page and blog published"
+        },
+        {
+          "time": 1648761818835,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
         }
       ],
-      "status": "NotStarted"
+      "status": "InProgress"
     },
     {
       "name": "Park entrance MVP",
@@ -1184,18 +1091,6 @@
       "status": "NotStarted"
     },
     {
-      "name": "Projects",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641221709388,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
       "name": "Purchase corresponding amount of MANA",
       "type": "Function",
       "relationships": [
@@ -1263,58 +1158,6 @@
       "status": "NotStarted"
     },
     {
-      "name": "Source Code",
-      "type": "Software",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210358694,
-          "operation": "create",
-          "description": null
-        }
-      ]
-    },
-    {
-      "name": "System Model",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641212607980,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641212613681,
-          "operation": "update",
-          "description": "Changed type from System to Data"
-        },
-        {
-          "time": 1641212705004,
-          "operation": "update",
-          "description": "Changed description: added: 'This se-toolkit model.'"
-        }
-      ],
-      "description": "This se-toolkit model."
-    },
-    {
-      "name": "Technical Operations",
-      "type": "Service",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641210526263,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641210678327,
-          "operation": "update",
-          "description": "Changed element name from: 'Technical' to: 'Technical Operations'"
-        }
-      ]
-    },
-    {
       "name": "Tenants page and rent model published",
       "type": "Milestone",
       "relationships": [
@@ -1376,9 +1219,19 @@
           "time": 1641221269762,
           "operation": "create",
           "description": "Added defined_by relationship with EP Organization in Github"
+        },
+        {
+          "time": 1648751168545,
+          "operation": "update",
+          "description": "Changed status from NotStarted to InProgress"
+        },
+        {
+          "time": 1648751169532,
+          "operation": "update",
+          "description": "Changed status from InProgress to Finished"
         }
       ],
-      "status": "NotStarted"
+      "status": "Finished"
     },
     {
       "name": "Transfer MANA to land owner wallets",
@@ -1409,6 +1262,78 @@
           "time": 1641213837492,
           "operation": "delete",
           "description": "Removed preceded_by relationship with Purchase ETH to cover GAS fees"
+        }
+      ]
+    },
+    {
+      "name": "Website",
+      "type": "Data",
+      "relationships": [],
+      "changeLog": [
+        {
+          "time": 1641210279497,
+          "operation": "create",
+          "description": null
+        },
+        {
+          "time": 1641210431858,
+          "operation": "update",
+          "description": "Changed element name from: 'Website' to: 'www Website'"
+        },
+        {
+          "time": 1641210446455,
+          "operation": "update",
+          "description": "Changed element name from: 'www Website' to: 'Engineering Park Website'"
+        },
+        {
+          "time": 1641211683579,
+          "operation": "create",
+          "description": "Added built_from relationship with Home"
+        },
+        {
+          "time": 1641211683580,
+          "operation": "create",
+          "description": "Added built_from relationship with Blog"
+        },
+        {
+          "time": 1641211683580,
+          "operation": "create",
+          "description": "Added built_from relationship with District Layout"
+        },
+        {
+          "time": 1641211683580,
+          "operation": "create",
+          "description": "Added built_from relationship with Guidelines"
+        },
+        {
+          "time": 1641211683581,
+          "operation": "create",
+          "description": "Added built_from relationship with History"
+        },
+        {
+          "time": 1641211683581,
+          "operation": "create",
+          "description": "Added built_from relationship with References"
+        },
+        {
+          "time": 1641211683581,
+          "operation": "create",
+          "description": "Added built_from relationship with Organization"
+        },
+        {
+          "time": 1641211683581,
+          "operation": "create",
+          "description": "Added built_from relationship with The Metaverse"
+        },
+        {
+          "time": 1641214180772,
+          "operation": "create",
+          "description": "Added built_from relationship with Tenants"
+        },
+        {
+          "time": 1648761726540,
+          "operation": "update",
+          "description": "Changed element name from: 'Engineering Park Website' to: 'Website'"
         }
       ]
     },
@@ -1515,29 +1440,6 @@
         }
       ],
       "status": "NotStarted"
-    },
-    {
-      "name": "www.",
-      "type": "Data",
-      "relationships": [],
-      "changeLog": [
-        {
-          "time": 1641212179362,
-          "operation": "create",
-          "description": null
-        },
-        {
-          "time": 1641212186585,
-          "operation": "update",
-          "description": "Changed description: added: 'The website'"
-        },
-        {
-          "time": 1641212239896,
-          "operation": "update",
-          "description": "Changed element name from: 'www' to: 'www.'"
-        }
-      ],
-      "description": "The website"
     }
   ],
   "changeLog": [
@@ -1595,6 +1497,56 @@
       "time": 1644354276601,
       "operation": "delete",
       "description": "Removed data element: Blog"
+    },
+    {
+      "time": 1648761526580,
+      "operation": "delete",
+      "description": "Removed people element: Contributor Tenants"
+    },
+    {
+      "time": 1648761746077,
+      "operation": "delete",
+      "description": "Removed data element: dcl."
+    },
+    {
+      "time": 1648761746077,
+      "operation": "delete",
+      "description": "Removed data element: www."
+    },
+    {
+      "time": 1648761746077,
+      "operation": "delete",
+      "description": "Removed data element: Media"
+    },
+    {
+      "time": 1648761746077,
+      "operation": "delete",
+      "description": "Removed data element: Projects"
+    },
+    {
+      "time": 1648761746077,
+      "operation": "delete",
+      "description": "Removed software element: Source Code"
+    },
+    {
+      "time": 1648761751836,
+      "operation": "delete",
+      "description": "Removed data element: System Model"
+    },
+    {
+      "time": 1648761777308,
+      "operation": "delete",
+      "description": "Removed service element: Community Liaison Operations"
+    },
+    {
+      "time": 1648761779964,
+      "operation": "delete",
+      "description": "Removed service element: Leadership Operations"
+    },
+    {
+      "time": 1648761781900,
+      "operation": "delete",
+      "description": "Removed service element: Legal Operations"
     }
   ]
 }
